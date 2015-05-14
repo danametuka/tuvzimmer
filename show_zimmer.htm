@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>טוב בית -  צימרים לדתיים</title>
+<meta name="description" content="">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- RTL version -->
+<link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/master/dist/cdnjs/3.3.1/css/bootstrap-rtl.min.css">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="js/show_zimmer.js"></script>
+<script src="js/general.js"></script>
+
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.js"></script>  
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body style="background: #f1f1f1;">
+
+        <div class="modal fade"  id="myModal_map"  class='myModal_map'  tabindex="-1" role="dialog"  aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content map_window_width">
+		     
+		         <i class="fa fa-times  close_modal_icon" id="close_map"></i>
+		     
+		         <div id="map-canvas" class="map-canvas"></div>
+		         
+		    </div>
+		  </div>
+		</div>
+		
+
+        <div class="modal fade"  id="myModal_contact"  class='myModal_contact'  tabindex="-1" role="dialog"  aria-hidden="true">
+						
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			    			    
+			         <i class="fa fa-times close_modal_icon" id="close_contact"></i>
+			     
+			         <img src="images/ajax-loader.gif" class='img_loader' style="display:none;">		
+			         <div id="message"></div>	         	      
+			      
+			         <form id="frm_contact" class="frm_contact">   
+			         
+			                  <p class="title">שלח פניה לבעלי הצימר</p>  
+			         
+			                  <input type="hidden" name="contact_email" id="contact_email">
+			                  
+			                  <div class="form-group">
+			                    <label class="sr-only" for="">שם מלא</label>
+			                    <input type="text" class="form-control" id="name" name="name"  placeholder="שם מלא">                 
+			                  </div>        
+			                  
+			                  <div class="form-group">
+			                    <label class="sr-only" for="">טלפון</label>
+			                    <input type="tel" class="form-control" id="phone" name="phone"  placeholder="טלפון">                 
+			                  </div>     
+			                  
+			                  <div class="form-group">
+			                    <label class="sr-only" for="">נושא הפניה</label>
+			                    <textarea id='comments' name='comments' class='comments' placeholder="נושא הפניה"></textarea>     
+			                  </div>  
+			                  
+			                  
+			                  <div class="form-group" style="text-align: center;">
+			                   <button type="submit" class="btn btn-primary btn-block">שלח</button>
+			                  </div>                 
+			                          
+			            </form>        
+			     
+			    </div>
+			  </div>
+		</div>
+			
+
+        <div class="modal fade"  id="myModal_prices"  tabindex="-1" role="dialog"  aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		     
+		         <i class="fa fa-times close_modal_icon" id="close_prices"></i>
+		     
+		         <div id="prices_general_content" class="prices_general_content"></div>
+		         
+		    </div>
+		  </div>
+		</div>
+		
+
+        <div class="modal fade"  id="myModal_sales_coupons"  tabindex="-1" role="dialog"  aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		     
+		         <i class="fa fa-times close_modal_icon" id="close_sales_coupons"></i>
+		     
+		         <div id="sales_coupons_content" class="sales_coupons_content"></div>
+		         
+		    </div>
+		  </div>
+		</div>
+		
+		
+		<div class="modal fade"  id="myModal_parameters"  tabindex="-1" role="dialog"  aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		     
+		         <i class="fa fa-times close_modal_icon" id="close_parameters"></i>
+		     
+		         <div id="parameters_content" class="parameters_content"></div>
+		         
+		    </div>
+		  </div>
+		</div>
+		
+
+
+        <!--  //END MODALS -->
+
+
+
+		<!-- loaded via ajax call -->
+		<div id="header_container"></div>
+		
+		<img src="images/ajax-loader.gif" class='img_loader'>
+		
+		<!-- top -->
+		<div class="top">
+		 <div class="container content" id="top">
+		  
+		  	  <h1 class="title"></h1>
+		  	  
+		  	  <div class="contact_name"></div>
+		  	
+		  	  <div class="area"></div>
+		  	  
+		  	  <div class="phone_container">
+		  	    
+		  	  </div>
+		  	  		 
+		 </div>
+		</div>
+		<!-- /top -->
+		
+		
+		<div role="tabpanel" class="tabs_content">
+
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">כללי</a></li>
+			    <li role="presentation"><a href="#prices" aria-controls="prices" role="tab" data-toggle="tab">מחירים</a></li>
+			    <li role="presentation"><a href="#attractions" aria-controls="atractions" role="tab" data-toggle="tab">אטרקציות</a></li>
+			 </ul>
+			 
+			 <!-- Tab panes -->
+			 <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="general"></div>
+			    <div role="tabpanel" class="tab-pane" id="prices"></div>
+			    <div role="tabpanel" class="tab-pane" id="attractions"></div>				   
+			  </div>
+	  	  
+		 </div><!-- /tabpannel -->
+		
+		
+		<div class="the_link contact_zimmer  clearfix">
+		    <div class="col-xs-10">
+		      <span>שלח פניה לבעלי הצימר</span>
+		    </div>
+		    <div class="col-xs-2  ico">
+			      <i class="fa fa-chevron-left"></i>
+			</div>
+	    </div>
+	    
+	    
+	    <div class="the_link parameters  clearfix">
+		    <div class="col-xs-10">
+		      <span>מאפייני הצימר</span>
+		    </div>
+		    <div class="col-xs-2  ico">
+			      <i class="fa fa-chevron-left"></i>
+			</div>
+	    </div>	    
+		
+		<div class='the_link  google_map clearfix'>
+		    <div class="col-xs-10">
+		      <span>הצג מפה</span>
+		    </div>
+		    <div class="col-xs-2  ico">
+			     <i class="fa fa-chevron-left"></i>
+			</div>
+		</div>
+		
+		
+		<div class='the_link gallery_link clearfix' id="gallery_link"></div>		
+		<div id="gallery_images" style="display:none;"></div>
+		
+		
+		<div class='the_link  prices_general clearfix'>
+		    <div class="col-xs-10">
+		      <span>מחירים - כללי</span>
+		    </div>
+		    <div class="col-xs-2  ico">
+			    <i class="fa fa-chevron-left"></i>
+			</div>
+		</div>
+		
+		
+	
+		<div class='the_link  sales_coupons clearfix'>
+		    <div class="col-xs-10">
+		      <span>מבצעים וקופונים</span>
+		    </div>
+		    <div class="col-xs-2  ico">
+			   <i class="fa fa-chevron-left"></i>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+				
+		
+</body>
+</html>

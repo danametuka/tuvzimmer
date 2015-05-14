@@ -1,0 +1,179 @@
+/***general
+*******************************************************/
+
+body {}
+
+p {margin: 0;}
+
+.img-responsive {display: inline-block;}
+
+
+.table-responsive {direction: ltr;}    
+ .table {direction: rtl !important;}
+
+h1 {font-size: 28px; margin-top: 5px;}
+
+.red {color:red;}
+
+.loader_container {margin: 0 auto; text-align: center;}
+
+iframe {max-width: 100%;}
+
+/*** Header
+******************************************************/
+
+.header {background: #253844; padding-top: 8px; padding-bottom: 7px; color: #ffffff; position: relative;}
+
+   .header .ico {font-size: 25px; padding-top: 6px;}
+
+  .header .logo .content {font-size: 25px;}
+  
+  
+   /***  menu dropdown ***/
+   .menu_open {position: relative; background: #16232B; }
+     .menu_open ul {list-style-type: none; margin: 0; padding: 10px 20px 10px 10px;
+                              position: absolute; right: 0; top: 0px; background: #16232B;
+                              width: 100%;  z-index: 99999; display:none;
+                            }
+      .menu_open ul li {margin-bottom: 10px;}
+       .menu_open a {color: white; text-decoration: none; font-size: 20px;}
+       .menu_open .fa {color: #EBBC8E; font-size: 18px;}
+
+
+
+/*** slogan
+*******************************************************/
+
+.slogan {background: #ecbd8c; color: white; font-weight: bold;  font-size: 15px; padding-top: 6px; padding-bottom: 8px; text-align: center;}
+
+
+/*** hp_main
+*******************************************************/
+
+.hp_main {background: url(../images/background.jpg); min-height: 550px; padding-top: 15px;}
+
+   .search_row div {text-align: center;}
+   .search_row .btn {background: rgba(250, 250, 250, 0.7); color: black; font-size: 17px; }
+
+   .hp_title {margin: 15px 0;}
+   .hp_title .col-xs-9 {padding-right: 0; padding-left: 0; padding-top: 16px; }
+   .hp_title .col-xs-3 {padding-right: 0;} 
+   .hp_title span {color: white; font-size: 25px; color: black;}
+
+   .results .zimmer {direction: rtl; background: white; } 
+      .results .zimmer .img {padding-left: 0;padding-right: 0; position: relative;}
+           
+           .details {position: relative;}
+            .results .title {font-size: 1.2em; color: #365d76; font-weight: bold; margin: 5px 0px 5px 5px; line-height: 17px;}
+            .results .amount {color: #b88857; font-size: 14px; margin-bottom: 5px; margin-right: 0px;}
+            .results .city {font-size: 14px; font-weight: bold; margin-right: 0px; }
+            .results .phone {font-size: 14px; font-weight: bold; margin: 5px 0px 0 0;}
+                  .results .phone a {color: black;}
+
+           .favorite {position: absolute; top: 3px; left: 3px; z-index: 999;}
+           .favorite_remove {position: absolute; top: 30px; left: 3px; z-index: 999;}
+           
+           
+
+      .coupon_image {position: absolute; right: 6px; top: 7px; z-index: 9999; max-width: 80px;}
+      .sale_image {position: absolute; right: 6px; bottom: 7px; z-index: 9999; max-width: 80px;}
+
+     .results_images .img_loader {margin: 0 auto; display: block;}
+
+    .flexslider_arrows {font-size: 28px; line-height: 28px; opacity: 0.3;}
+     .flex-direction-nav a { top: 55%;}
+
+
+
+/*** hp bottom links
+*******************************************************/
+
+.hp_bottom_links {background: #f1f1f1; text-align: center; padding: 8px 0; font-size: 25px;}
+   .hp_bottom_links a {text-decoration: underline; color: #303030; font-size: 25px;}
+
+
+/*** page
+********************************************************/
+
+.main {padding: 10px 0; background: #F1F1F1; min-height: 200px;}
+  .main .content {font-size: 1.2em;}
+
+
+/*** search
+********************************************************/
+
+.btn_search {background: #ecbd8c; color: white; font-weight: bold;}
+
+.btn_back_container {text-align: left; padding-left: 0; padding-top: 6px;}
+  .btn_back {padding-top: 2px; padding-bottom: 2px;}
+
+
+/*** show zimmer
+*********************************************************/
+
+.top .phone_container {margin: 0 auto; text-align: center;}
+.btn_tel {background: url(../images/phone.png); width: 150px; height: 37px; color: white; position: relative; margin: 10px 0 8px 0;}
+   .btn_tel:hover {color: white;}
+.btn_tel span {position: absolute; top: 8px; left: 13px;}
+
+.tabs_content {margin: 10px 0; padding: 0 10px; max-height: 250px; overflow: auto; background: white; position: relative;}
+ .nav-tabs .active a {color: white !important; background: #337ab7 !important;}
+
+   .tabs_content .favorite {position: absolute; top: 11px; left: 15px;}
+   .tabs_content .favorite_remove {position: absolute; top: 11px; left: 40px;}
+
+.tab-pane {min-height: 200px; padding-top: 10px;}
+
+.contact_zimmer {background: #375C76; color: white; padding: 8px 0; font-weight: bold; margin-bottom: 10px;}
+
+.google_map {background: #375C76; color: white; padding: 8px 0; font-weight: bold; margin-bottom: 10px;}
+
+.google_map iframe {height: 400px !important;}
+ .map-canvas {width: 100%; height: 400px;}
+.close_modal_icon {position: absolute;  top: -6px;  left: -6px;   z-index: 99999;
+                      font-size: 25px;  border: 2px solid #375C76;   color: #375C76;   background: white;
+                      border-radius: 50%; width: 29px; text-align: center;
+                     }
+
+
+ .modal-content {padding: 10px !important; position: relative;}
+  #myModal_contact .modal-dialog .title {font-weight: bold; margin-bottom: 10px;}
+.modal h2 {color: #253844;}
+
+   .frm_contact textarea {height: 100px; width: 100%;}
+
+
+.the_link {background: #5e869e; color: white; padding: 14px 0 8px 0; font-weight: bold; margin-bottom: 10px;}
+ .the_link .ico .fa {color: #2e3c44; font-size: 17px; margin-top: 2px;}
+
+
+#myModal_parameters .fa-arrow-circle-left {color: #ECBD8C;}
+
+
+.gallery_link { }
+  .gallery_link a {color: white;}
+
+.prices_general {}
+
+.sales_coupons {}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+	
+	.slogan { font-size: 14px;}
+	
+	 .search_row .btn {font-size: 16px; }
+	
+	.hp_title .col-xs-9 {margin-right: -10px; }
+	  .hp_title span {font-size: 22px;}
+	
+	
+}

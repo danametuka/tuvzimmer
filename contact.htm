@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>טוב בית -  צימרים לדתיים</title>
+<meta name="description" content="">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- RTL version -->
+<link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/master/dist/cdnjs/3.3.1/css/bootstrap-rtl.min.css">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="js/general.js"></script>
+<script src="js/contact.js"></script>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body style="background: #F1F1F1;">
+
+		<!-- loaded via ajax call -->
+		<div id="header_container"></div>
+		
+		<!-- main -->
+		<div class="main">
+		 <div class="container content">
+		  
+		  	<img src="images/ajax-loader.gif" class='img_loader' style='display:none'>
+		  	
+		  	<div id="results"></div>		  	
+		  			  	
+		  	<div id="form_container"> 	
+		  	
+		  	     <p style='margin-bottom: 10px;'><strong>ניתן לפנות אלינו באמצעות הטופס הבא:</strong></p>
+		  	
+				 <form id="frm_contact" class="form-horizontal">
+				  	
+				  	<div class="form-group">
+				       <label for="" class="col-sm-2 control-label"><span class='red'>*</span> שם פרטי</label>
+				       <div class="col-sm-10">
+				           <input type="text" class="form-control" id="fname" name="fname" placeholder="">
+				       </div>
+				    </div>
+				    
+				    <div class="form-group">
+				       <label for="" class="col-sm-2 control-label"><span class='red'>*</span> שם משפחה</label>
+				       <div class="col-sm-10">
+				           <input type="text" class="form-control" id="lname" name="lname" placeholder="">
+				       </div>
+				    </div>
+				    
+				     <div class="form-group">
+				       <label for="" class="col-sm-2 control-label"><span class='red'>*</span> טלפון</label>
+				       <div class="col-sm-10">
+				           <input type="tel" class="form-control" id="phone" name="phone" placeholder="">
+				       </div>
+				    </div>
+				    
+				    <div class="form-group">
+				       <label for="" class="col-sm-2 control-label"><span class='red'>*</span> אימייל</label>
+				       <div class="col-sm-10">
+				           <input type="email" class="form-control" id="email" name="email" placeholder="">
+				       </div>
+				    </div>
+				    
+				    <div class="form-group">
+				       <label for="" class="col-sm-2 control-label"><span class='red'></span> נושא הפנייה</label>
+				       <div class="col-sm-10">
+				           <textarea class="form-control" rows="6" name="comments" id="comments"></textarea>
+				       </div>
+				    </div>
+				    
+				    <button type="submit" class="btn btn-primary btn-block ">שלח</button>
+			  
+			    </form>
+		  	
+		  	</div>
+		 
+		 </div>
+		</div>
+		<!-- /main -->		
+		
+</body>
+</html>

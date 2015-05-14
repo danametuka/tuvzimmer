@@ -1,0 +1,66 @@
+<!-- header -->
+<div class="header">
+ <div class="container">
+  <div class="row">
+  
+  	<div class="col-xs-2">
+  	   <i class="fa fa-bars ico" id="mnu_btn"></i>
+  	</div>
+  	
+  	<div class="col-xs-8 logo" onclick="location='index.html'">
+  	    <div class="content">
+  	       טוב צימר
+  	    </div>
+  	</div>
+  	
+  	<div class="col-xs-2">
+  	    <a href='favorites.htm'><img src='images/favorites.png'></a>
+  	</div>  
+  
+  </div>
+ </div>
+</div>
+<!-- /.header -->
+
+<div class="menu_open">
+   <ul>
+    <li><a href='index.htm'><i class="fa fa-arrow-circle-left"></i> דף הבית</a></li>
+    <li><a href='page.htm?id=1'><i class="fa fa-arrow-circle-left"></i> מי אנחנו</a></li>
+    <li><a href='page.htm?id=31'><i class="fa fa-arrow-circle-left"></i> אישור ספקי אינטרנט כשר</a></li>
+    <li><a href='page.htm?id=30'><i class="fa fa-arrow-circle-left"></i> מעשרים באמונה</a></li>
+    <li><a href='page.htm?id=2'><i class="fa fa-arrow-circle-left"></i> שאלות ותשובות</a></li>
+    <li><a href='page.htm?id=3'><i class="fa fa-arrow-circle-left"></i> פרסום באתר</a></li>
+    <li><a href='contact.htm'><i class="fa fa-arrow-circle-left"></i> צרו קשר</a></li>
+   </ul>
+</div>
+
+
+<!-- Slogan -->
+<div class="slogan">
+ <div class="container">
+  <div class="row">
+  
+  	   צימרים לשומרי תורה ומצוות. נופש באווירה רוחנית
+    
+  </div>
+ </div>
+</div>
+<!-- /slogan -->
+
+<script>
+$(function() {
+
+    var menu_btn=$("#mnu_btn");
+    menu_btn.on('click',function() {
+    	if($(".menu_open ul").is(":hidden") ) {
+    		$(".menu_open ul").slideDown();
+    		$(this).attr('class','fa fa-times ico')
+    	}  
+    	else {
+    		$(".menu_open ul").slideUp();
+    		$(this).attr('class','fa fa-bars ico')
+    	}
+    })
+	
+})
+</script>

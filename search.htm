@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>טוב בית -  צימרים לדתיים</title>
+<meta name="description" content="">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- RTL version -->
+<link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/master/dist/cdnjs/3.3.1/css/bootstrap-rtl.min.css">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="js/general.js"></script>
+<script src="js/search.js"></script>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+		<!-- loaded via ajax call -->
+		<div id="header_container"></div>
+		
+		<!-- main -->
+		<div class="main">
+		 <div class="container content">
+		  
+		 <img src="images/ajax-loader.gif" class='img_loader'>
+		 
+		 
+		 <div id="search_results" class="results" style="display:none">
+		   <div class="clearfix">
+		  	  <div class="col-xs-8" style="padding-right: 0;">
+		  	    <h1>תוצאות חיפוש</h1>
+		  	  </div>
+		  	  <div class="col-xs-4 btn_back_container">
+		  	    <a class="btn btn-primary btn_back" href="search.htm">חזרה <i class="fa fa-arrow-circle-left"></i></a>
+		  	  </div>
+		     </div>
+		 </div>
+		 
+		  	
+		 <div id="search_form_container" style="display:none"> 	
+		  	<h1>חיפוש צימרים</h1>
+		  	
+		  	<form id="frm_search">
+		  	
+		  	  <div class="form-group">
+			     <select class="form-control" id="area" name="area">
+			       <option value=''>אזור</option>			      
+			     </select>
+			  </div>
+			  
+			  
+			  <div class="form-group">
+			     <select class="form-control" id="city" name="city">
+			       <option value=''>יישוב</option>			      
+			     </select>
+			  </div>
+			  
+			  
+			  <div class="form-group">
+			     <select class="form-control" id="zimmer_type" name="zimmer_type">
+			       <option value=''>סוג הצימר</option>
+			       <option value='cave'>מערה</option>
+			       <option value='vila'>וילה</option>
+			       <option value='wood'>בקתת עץ</option>
+			       <option value='suite'>סוויטה</option>
+			       <option value='apartment'>דירת נופש בבנין</option>
+			       <option value='rooms'>חדרי אירוח</option>
+			       <option value='yechidat_nofesh'>יחידות נופש</option>
+			       <option value='botik_hotel'>מלון בוטיק</option>
+			       <option value='hotels'>מלונות ובתי הארחה</option>
+			       <option value='stone'>מבנה אבן</option>
+			       <option value='zimmer_mevudad'>צימר יחיד</option>
+			       <option value='caravan'>קרוואן</option>
+			        <option value='mitcham'>מתחם</option>
+			     </select>
+			  </div>
+			  
+		  	
+			  <div class="form-group">
+			     <select class="form-control" id="price" name="price">
+			        <option value=''>מחיר</option>
+			        <option value='300'>עד 300</option>
+					<option value='400'>עד 400</option>
+			        <option value='500'>עד 500</option>
+			        <option value='600'>עד 600</option>
+			        <option value='700'>עד 700</option>
+			        <option value='800'>עד 800</option>
+			        <option value='900'>עד 900</option>
+			        <option value='1000'>עד 1000</option>		
+			        <option value='99999'>מעל 1000</option>	
+			     </select>
+			  </div>
+						  
+			  <div class="form-group">
+			     <select class="form-control" id="pool_options" name="pool_options">
+			        <option value=''>בריכה</option>			       
+			     </select>
+			  </div>
+			  
+			  <div class="form-group">
+			    <input type='text' name='s' id='s' class="form-control" placeholder="חיפוש חופשי">
+			  </div>
+			  
+			  	  
+              <button type="submit" class="btn btn-block btn_search">חיפוש</button>
+          
+           </form>
+		  </div>
+		  	
+		 
+		 </div>
+		</div>
+		<!-- /main -->		
+		
+</body>
+</html>
